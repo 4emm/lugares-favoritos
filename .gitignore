@@ -1,0 +1,7 @@
+﻿KEYFIREBASE*
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!app.json
+!.prettierrc.json
