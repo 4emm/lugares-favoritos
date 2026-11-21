@@ -1,7 +1,40 @@
-﻿KEYFIREBASE*
-*.json
-!package.json
-!package-lock.json
-!tsconfig.json
-!app.json
-!.prettierrc.json
+# Dependencias
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Pruebas
+coverage/
+
+# Carpetas nativas generadas
+/ios
+/android
+
+# Variables de entorno: nunca se suben (solo la referencia pública)
+.env*
+!.env.example
+
+# Claves y certificados
+*.jks
+*.p8
+*.p12
+*.key
+*.pem
+*.mobileprovision
+*.keystore
+*firebase-adminsdk*.json
+
+# Sistema y editores
+.DS_Store
+Thumbs.db
+*.tsbuildinfo
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# Vercel / EAS locales
+.vercel/

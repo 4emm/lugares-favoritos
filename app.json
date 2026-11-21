@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "Lugares favoritos",
+    "slug": "22-lugares-favoritos-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "lugaresfavoritos",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.lugaresfavoritos.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "La app usa tu ubicación para ordenar tus lugares por distancia y dibujarlos en el radar.",
+        "NSPhotoLibraryUsageDescription": "La app accede a tus fotos para guardar una imagen de cada lugar."
+      }
+    },
+    "android": {
+      "package": "com.lugaresfavoritos.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0F172A",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "La app usa tu ubicación para ordenar tus lugares por distancia y dibujarlos en el radar."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "La app accede a tus fotos para guardar una imagen de cada lugar."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0F172A",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 76
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

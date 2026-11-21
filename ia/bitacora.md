@@ -1,0 +1,5 @@
+# Bitácora de IA
+
+| Fecha      | Propósito                                                  | Evidencia / validación                                                                                                                                      | Decisión                                                                                                  |
+| ---------- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| 2026-11-20 | Preparar las reglas y la guía de demostración para la app. | Se añadieron `AGENTS.md`, esta carpeta `ia/` y el verificador `npm run ia:verificar`. La demostración de límites queda pendiente de realizar por el equipo. | Mantener los secretos fuera del repositorio y demostrar manualmente los límites antes de la sustentación. |
